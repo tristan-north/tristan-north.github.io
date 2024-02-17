@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+body {
+    font-family: Inter, sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between; /* Aligns children to the start and end of the container */
+    align-items: center; /* Aligns children vertically in the center */
+    padding: 0 10px; /* Adds some padding on the left and right */
+}
+
+.topbar-left {
+    display: flex;
+    gap: 20px; /* Adds a gap between the right-aligned text elements */
+    align-items: center;
+}
+
+.topbar-separator {
+    width: 1px; /* Thickness of the separator */
+    height: 20px; /* Thickness of the separator */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-icon {
+    fill: rgb(10,102,194);
+}
+.linkedin-icon:hover {
+    fill: rgb(60, 132, 205);
+}
+
+.github-icon {
+    fill: rgb(60,60,60);
+}
+.github-icon:hover {
+    fill: rgb(110, 110, 110);
+}
+
+.email-addresss {
+  font-size: 13px;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 30px; /* Adds a gap between the right-aligned text elements */
+}
+
+.page-links {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+.page-links:hover {
+    color: rgb(100, 120, 200);
+}
+
+
+.name-title {
+    font-family: "Kanit", sans-serif;
+    font-size: 22px;
+}
+
+.header-hr {
+  border: 0;
+  height: 1px; /* Thickness of the line */
+  background-color: rgba(0, 0, 0, 0.2);
+ }
