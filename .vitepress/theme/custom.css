@@ -1,0 +1,21 @@
+:root {
+    /* --vp-c-brand-1: #7e8738;
+    --vp-c-brand-2: #747bff; */
+  }
+
+/* Give some padding around the hero image */
+.VPHome {
+    padding: 50px;
+}
+.VPHero.has-image.VPHomeHero {
+    padding-bottom: 90px;
+}
+
+/* Hide the light/dark mode toggle */
+/* .VPNavBarAppearance.appearance {
+    display: None;
+} */
+/* And for mobile */
+/* .VPNavScreenAppearance.appearance {
+    display: None;
+} */
