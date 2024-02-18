@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Machine Learning Notes
+title: Machine Learning
 ---
 
 Notes on Machine Learning

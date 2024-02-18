@@ -1,4 +1,4 @@
-<div class="topbar" style="margin-bottom: 50px;max-width: 1200px;margin: auto;">
+<div class="topbar">
   <div class="topbar-left">
     <div class="name-title">Tristan North</div>
     <div class="topbar-separator"></div>
@@ -19,11 +19,11 @@
   </div>
 
   <div class="topbar-right">
-    <a href="/" class="page-links">HOME</a>
-    <a href="/about.html" class="page-links">ABOUT</a>
-    <a href="/projects.html" class="page-links">PROJECTS</a>
-    <a href="/mlnotes.html" class="page-links">ML NOTES</a>
-    <a href="/vfxwork.html" class="page-links">VFX WORK</a>
+    <a href="/" {% if page.url == "/" %}class="page-links-current"{% else %}class="page-links"{% endif %}>HOME</a>
+    <a href="/about.html" {% if page.url == "/about.html" %}class="page-links-current"{% else %}class="page-links"{% endif %}>ABOUT</a>
+    <a href="/projects.html" {% if page.url == "/projects.html" %}class="page-links-current"{% else %}class="page-links"{% endif %}>PROJECTS</a>
+    <a href="/mlnotes.html" {% if page.url == "/mlnotes.html" %}class="page-links-current"{% else %}class="page-links"{% endif %}>MACHINE LEARNING</a>
+    <a href="/vfxwork.html" {% if page.url == "/vfxwork.html" %}class="page-links-current"{% else %}class="page-links"{% endif %}>VFX WORK</a>
   </div>
 
 </div>
