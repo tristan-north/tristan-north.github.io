@@ -1,10 +1,37 @@
+:root {
+    --primaryTextColor: rgb(188, 188, 188);
+    --footer-height: 30px;
+    --padding-top: 30px;
+    --bkgColor: rgb(29, 29, 29);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-:root {
-    --footer-height: 30px;
-    --padding-top: 30px;
+@font-face {
+    font-family: 'Hack';
+    src: url('hack-regular-subset.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Hack';
+    src: url('hack-bold-subset.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+a:link, a:visited {
+    color: rgb(73, 129, 185);
+}
+a:hover {
+    color: rgb(117, 162, 208);
+}
+
 
 /* Ensure the body and html tags take up the full height of the viewport */
 html, body {
@@ -14,17 +41,22 @@ html, body {
 }
 
 body {
-    font-family: Inter, sans-serif;
-    color: rgb(50, 50, 50);
+    font-family: 'Hack', sans-serif;
+    color: var(--primaryTextColor);
     display: flex;
     flex-direction: column;
+    background-color: var(--bkgColor);
+    font-size: 14px;
 }
+
+
 
 .page-content {
     width: 800px;
     margin: 0 auto;
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 
@@ -32,63 +64,81 @@ body {
     display: flex;
     justify-content: space-between; /* Aligns children to the start and end of the container */
     align-items: center; /* Aligns children vertically in the center */
-    width: 1200px;
-    margin: auto;
-    margin-top: 10px;
+    width: 100vw;
+    margin: 0;
+    padding-top: 10px;
+    background-color: rgb(40, 40, 40);
+}
+
+.topbar-stretch {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.topbar-center-stretch {
+    flex-grow: 1;
+    height: 100%;
+    max-width: 200px;
 }
 
 .topbar-left {
     display: flex;
     gap: 20px; /* Adds a gap between the right-aligned text elements */
     align-items: center;
+    padding-left: 20px;
 }
 
 .topbar-separator {
     width: 1px; /* Thickness of the separator */
     height: 20px; /* Thickness of the separator */
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(146, 146, 146)
 }
 
 .linkedin-icon {
-    fill: rgb(10,102,194);
+    fill: rgb(149, 149, 149);
 }
 .linkedin-icon:hover {
-    fill: rgb(60, 132, 205);
+    fill: rgb(53, 109, 194);
 }
 
 .github-icon {
-    fill: rgb(60,60,60);
+    fill: rgb(149, 149, 149);
 }
 .github-icon:hover {
-    fill: rgb(110, 110, 110);
+    fill: rgb(222, 222, 222);
 }
 
 .email-addresss {
   font-size: 13px;
+  padding-right: 30px;
 }
 
 .topbar-right {
     display: flex;
-    gap: 30px; /* Adds a gap between the right-aligned text elements */
+    gap: 0px; /* Adds a gap between the right-aligned text elements */
 }
 
-.page-links {
+a.page-links, a.page-links:visited {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
-    color: rgb(60, 60, 60);
+    color: var(--primaryTextColor);
+    padding: 5px 20px;
+    padding-bottom: 10px;
 }
-.page-links:hover {
-    color: rgb(100, 120, 200);
-}
+/* .page-links:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+} */
 
-.page-links-current {
+a.page-links-current, a.page-links-current:visited {
     font-size: 16px;
-    font-weight: 500;
     text-decoration: none;
-    color: rgb(60, 60, 60);
-    border-bottom: 2px solid; /* currentColor makes the border the same color as the text */
-    padding-bottom: 0px; /* Adjust space between text and underline */
+    color: rgb(255, 255, 255);
+    border-top: 2px solid; /* currentColor makes the border the same color as the text */
+    border-color: rgb(44, 90, 230);
+    padding: 5px 20px;
+    background-color: var(--bkgColor)
 }
 
 
@@ -112,7 +162,7 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 12px;
-    color: rgb(150, 150, 150);
-    background-color: rgb(245, 245, 245);
+    color: rgb(84, 84, 84);
+    background-color: rgb(24, 24, 24);
     width: 100%;
 }
