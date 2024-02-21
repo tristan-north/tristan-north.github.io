@@ -14,8 +14,6 @@ From 14 000 cells to ~3 000 which is 4.7x reduction in
 
 ## Raytracer
 
-
-
 ## Fplay
 
 ## Maya 8.5 Gleam
