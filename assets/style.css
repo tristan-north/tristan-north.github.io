@@ -66,7 +66,7 @@ body {
     align-items: center; /* Aligns children vertically in the center */
     width: 100vw;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: rgb(40, 40, 40);
 }
 
@@ -92,6 +92,14 @@ body {
     width: 1px; /* Thickness of the separator */
     height: 20px; /* Thickness of the separator */
     background-color: rgb(146, 146, 146)
+}
+
+.tristan-logo {
+    padding-bottom: 2px; 
+    opacity: 0.75;
+}
+.tristan-logo:hover {
+    opacity: 0.9;
 }
 
 .linkedin-icon {
@@ -126,10 +134,10 @@ a.page-links, a.page-links:visited {
     padding: 5px 20px;
     padding-bottom: 10px;
 }
-/* .page-links:hover {
+a.page-links:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.2);
-} */
+}
 
 a.page-links-current, a.page-links-current:visited {
     font-size: 16px;
