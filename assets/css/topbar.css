@@ -1,0 +1,94 @@
+.topbar {
+    display: flex;
+    justify-content: space-between; /* Aligns children to the start and end of the container */
+    align-items: center; /* Aligns children vertically in the center */
+    width: 100vw;
+    margin: 0;
+    padding-top: 20px;
+    background-color: rgb(40, 40, 40);
+}
+
+.topbar-stretch {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.topbar-center-stretch {
+    flex-grow: 1;
+    height: 100%;
+    max-width: 200px;
+}
+
+.topbar-left {
+    display: flex;
+    gap: 20px; /* Adds a gap between the right-aligned text elements */
+    align-items: center;
+    padding-left: 20px;
+}
+
+.topbar-separator {
+    width: 1px; /* Thickness of the separator */
+    height: 20px; /* Thickness of the separator */
+    background-color: rgb(146, 146, 146)
+}
+
+.tristan-logo {
+    padding-bottom: 2px; 
+    opacity: 0.75;
+}
+.tristan-logo:hover {
+    opacity: 0.9;
+}
+
+.linkedin-icon {
+    fill: rgb(149, 149, 149);
+}
+.linkedin-icon:hover {
+    fill: rgb(53, 109, 194);
+}
+
+.github-icon {
+    fill: rgb(149, 149, 149);
+}
+.github-icon:hover {
+    fill: rgb(222, 222, 222);
+}
+
+.email-addresss {
+  font-size: 13px;
+  padding-right: 30px;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 0px; /* Adds a gap between the right-aligned text elements */
+}
+
+a.page-links, a.page-links:visited {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    padding: 5px 20px;
+    padding-bottom: 10px;
+}
+a.page-links:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+a.page-links-current, a.page-links-current:visited {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top: 2px solid; /* currentColor makes the border the same color as the text */
+    border-color: rgb(44, 90, 230);
+    padding: 5px 20px;
+    background-color: var(--bkgColor)
+}
+
+.header-hr {
+  border: 0;
+  height: 1px; /* Thickness of the line */
+  background-color: rgba(0, 0, 0, 0.2);
+ }
