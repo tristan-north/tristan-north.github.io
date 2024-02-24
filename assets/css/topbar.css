@@ -21,7 +21,7 @@
 
 .topbar-left {
     display: flex;
-    gap: 20px; /* Adds a gap between the right-aligned text elements */
+    gap: 10px; /* Adds a gap between the right-aligned text elements */
     align-items: center;
     padding-left: 20px;
 }
@@ -29,7 +29,8 @@
 .topbar-separator {
     width: 1px; /* Thickness of the separator */
     height: 20px; /* Thickness of the separator */
-    background-color: rgb(146, 146, 146)
+    background-color: rgb(146, 146, 146);
+    margin: 0 10px;
 }
 
 .tristan-logo {
@@ -52,6 +53,13 @@
 }
 .github-icon:hover {
     fill: rgb(222, 222, 222);
+}
+
+.imdb-icon {
+    fill: rgb(149, 149, 149);
+}
+.imdb-icon:hover {
+    fill: #F5C518;
 }
 
 .email-addresss {

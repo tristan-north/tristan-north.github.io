@@ -49,6 +49,21 @@ body {
     font-size: 14px;
 }
 
+figure {
+    margin: 0;
+    font-size: 12px;
+}
+
+figcaption {
+    text-align: center;
+    color: rgb(150, 150, 150);
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
 .page-content {
     width: 800px;
     margin: 0 auto;
