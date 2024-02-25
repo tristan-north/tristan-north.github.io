@@ -2,7 +2,7 @@
 layout: base
 title: Personal Projects
 ---
-## // Adaptive Fluid Solver
+## // Adaptive Fluid Solver (VEX)
 <div class="video-container">
 <figure>
 <video loop autoplay>
@@ -29,13 +29,27 @@ On the face of it using adaptive grids for simulations could be even more benefi
 
 The visualisations from my VEX implementation above show the simulation grid itself on the left and the velocity field on the right. The number of grid cells in this example simulation that need to be computed and stored in memory at each time step is about 5x fewer than would be required with a dense grid approach.
 
+<br>
+## // CUDA Raymarching (C++ | CUDA | OpenGL)
+<div class="video-container">
+<video loop autoplay>
+    <source src="assets/CUDA_raymarching.webm" type="video/webm">
+</video>
+</div>
+This project was mostly just an excuse to experiment with programming the GPU directly with CUDA. The idea was to create a GPU renderer which has simple and fast geometry intersections to allow for shooting enough rays to get complex lighting at interactive frame rates. 
+
+Specifically, the geometry intersection routine is raymarching through axis aligned bounding boxes and the lighting supports multiple bounces of indirect illumination and area lights.
+
+In the example above there are 4 indirect bounces and it's shooting 32 rays per pixel which runs at around 70fps on my RTX 3060 GPU.
+
+The [code](https://github.com/tristan-north/cubeworld) is up on my github with most of the juice being in [kernel.cu](https://github.com/tristan-north/cubeworld/blob/master/kernel.cu). The main references I used were [this project](https://github.com/straaljager/GPU-path-tracing-with-CUDA-tutorial-2) and the eternally useful [scratchapixel](https://scratchapixel.com/lessons/3d-basic-rendering/introduction-acceleration-structure/bounding-volume-hierarchy-BVH-part1.html).
+
+
 ## // Raytracer
 
 ## // Fplay
 
 ## // Maya 8.5 Gleam
-
-## // Cubeworld
 
 ## // Looklab (Odin and C++)
 
