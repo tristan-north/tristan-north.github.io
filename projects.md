@@ -44,12 +44,25 @@ In the example above there are 4 indirect bounces and it's shooting 32 rays per 
 
 The [code](https://github.com/tristan-north/cubeworld) is up on my github with most of the juice being in [kernel.cu](https://github.com/tristan-north/cubeworld/blob/master/kernel.cu). The main references I used were [this project](https://github.com/straaljager/GPU-path-tracing-with-CUDA-tutorial-2) and the eternally useful [scratchapixel](https://scratchapixel.com/lessons/3d-basic-rendering/introduction-acceleration-structure/bounding-volume-hierarchy-BVH-part1.html).
 
+<br>
+## // Raytracer (C++)
+<div class="video-container">
+<video loop autoplay>
+    <source src="assets/raytracer.webm" type="video/webm">
+</video>
+</div>
+This renderer is a software renderer written in C++ and is a bit more fully featured than the CUDA raymarcher. It supports different types of materials, loading arbitrary geometry and tracing against triangles using an acceleration structure for faster performance.
 
-## // Raytracer
+It's primarily based on the book [Raytracing from the Ground Up](https://www.amazon.com/Ray-Tracing-Ground-Kevin-Suffern-ebook/dp/B00SC81178) using the acceleration structure as described on [scratchapixel.com](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-acceleration-structure/grid.html).
+
+The geometry is loaded using a custom [obj file format](https://en.wikipedia.org/wiki/Wavefront_.obj_file) parser.
+
+Having used renderers for years at work it was very rewarding to create my own and understand how they work at the deepest level. There's nothing like having to do it yourself to appreciate the nuance and tradeoffs that have to be made.
+
+
+The [code](https://github.com/tristan-north/raytracer) is up on my github.
 
 ## // Fplay
-
-## // Maya 8.5 Gleam
 
 ## // Looklab (Odin and C++)
 
