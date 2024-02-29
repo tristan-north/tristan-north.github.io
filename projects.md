@@ -62,7 +62,13 @@ Having used renderers for years at work it was very rewarding to create my own a
 
 The [code](https://github.com/tristan-north/raytracer) is up on my github.
 
+<br>
 ## // Fplay
+<div class="video-container">
+<video loop autoplay>
+    <source src="assets/fplay.webm" type="video/webm">
+</video>
+</div>
 
 ## // Looklab (Odin and C++)
 
