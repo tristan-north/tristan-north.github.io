@@ -6,13 +6,13 @@ title: Personal Projects
 <div class="video-container">
 <figure>
 <video loop autoplay>
-    <source src="assets/fluidamr_grid.webm" type="video/webm">
+    <source src="assets/fluidamr_grid.mp4" type="video/mp4">
 </video>
 <figcaption>The cells of the adpative grid</figcaption>
 </figure>
 <figure>
 <video loop autoplay>
-    <source src="assets/fluidamr_color.webm" type="video/webm">
+    <source src="assets/fluidamr_color.mp4" type="video/mp4">
 </video>
 <figcaption>Visualisation of the computed velocity field</figcaption>
 </figure>
@@ -33,7 +33,7 @@ The visualisations from my VEX implementation above show the simulation grid its
 ## // CUDA Raymarching (C++ | CUDA | OpenGL)
 <div class="video-container">
 <video loop autoplay>
-    <source src="assets/CUDA_raymarching.webm" type="video/webm">
+    <source src="assets/CUDA_raymarching.mp4" type="video/mp4">
 </video>
 </div>
 This project was mostly just an excuse to experiment with programming the GPU directly with CUDA. The idea was to create a GPU renderer which has simple and fast geometry intersections to allow for shooting enough rays to get complex lighting at interactive frame rates. 
@@ -48,7 +48,7 @@ The [code](https://github.com/tristan-north/cubeworld) is up on my github with m
 ## // Raytracer (C++)
 <div class="video-container">
 <video loop autoplay>
-    <source src="assets/raytracer.webm" type="video/webm">
+    <source src="assets/raytracer.mp4" type="video/mp4">
 </video>
 </div>
 This renderer is a software renderer written in C++ and is a bit more fully featured than the CUDA raymarcher. It supports different types of materials, loading arbitrary geometry and tracing against triangles using an acceleration structure for faster performance.
