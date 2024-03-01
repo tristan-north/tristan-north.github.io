@@ -66,7 +66,7 @@ The [code](https://github.com/tristan-north/raytracer) is up on my github.
 ## // Fplay
 <div class="video-container">
 <video loop autoplay>
-    <source src="assets/fplay.webm" type="video/webm">
+    <source src="assets/fplay.mp4" type="video/webm">
 </video>
 </div>
 
