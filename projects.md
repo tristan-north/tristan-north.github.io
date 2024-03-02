@@ -63,13 +63,36 @@ Having used renderers for years at work it was very rewarding to create my own a
 The [code](https://github.com/tristan-north/raytracer) is up on my github.
 
 <br>
-## // Fplay
+## // Fplay (C++ | Qt)
 <div class="video-container">
+<figure>
 <video loop autoplay>
     <source src="assets/fplay.mp4" type="video/mp4">
 </video>
+<figcaption>The fplay interface playing an example simulation.</figcaption>
+</figure>
 </div>
+
+Fplay is a drop in replacement for Mplay which is a utility program shipped with Houdini. When creating simulations, which can take some time to calculate, Houdini captures the viewport at each frame and sends it to Mplay to be able to play back in realtime. Unfortunately the Mplay interface is a bit terrible and has some unhelpful quirks such as overwriting the frames of the previous sim by default.
+
+Initially it wasn't at all clear how Mplay could be replaced as Houdini does some behind the scenes magic to open Mplay automatically and send it the captured frames.
+
+This is all undocumented so it took some poking around with [wireshark](https://www.wireshark.org) but it turns out Houdini is sending the frames to Mplay over TCP and by placing a file named .flipbook_lock.$HOSTNAME in the user dir which contains a port number, we can intercept the communication by starting our own TCP server to listen on that port.
+
+The data sent for each frame contains two header packets with some basic information useful for interpreting the actual image data such as the resolution, pixel format, colorspace and frame number. If we interpret the packet data as ASCII we get:
+
+<div style="text-align: center;">
+<img src="assets/fplay_tcpheader.png" alt="fplay TCP header">
+</div>
+
+The fplay interface shows the list of previous sequences on the left with standard playback controls and a button for saving out the image sequence to a .mov file for easy sharing.
 
 ## // Looklab (Odin and C++)
 
 ## // VR Cinema
+
+## // Miscellaneous
+ - Gleam Maya 8.5 (screenshot)
+ - fmon
+ - renderLog (screenshot from old reel)
+ - rmanView, a framebuffer for renderman (code on github)
