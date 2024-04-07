@@ -87,12 +87,31 @@ The data sent for each frame contains two header packets with some basic informa
 
 The fplay interface shows the list of previous sequences on the left with standard playback controls and a button for saving out the image sequence to a .mov file for easy sharing.
 
-## // Looklab (Odin and C++)
+The [code](https://github.com/tristan-north/fplay) is up on my github.
 
-## // VR Cinema
+<br>
+## // 3D Painting (C++ | OpenGL | Qt)
+<div class="video-container">
+<figure>
+<video loop autoplay>
+    <source src="assets/3dpaint.mp4" type="video/mp4">
+</video>
+<figcaption>The 3D Paint OpenGL view and corresponding texture map being generated on the fly.</figcaption>
+</figure>
+</div>
 
-## // Miscellaneous
+This is a prototype 3D paint program which allows you to load a model and paint on the surface. It generates a 2D texture of the paint based on the UV coordinates of the geometry vertices. This texture can then be used by a renderer like Pixar's Renderman.
+
+There was a focus on the speed of the 2D texture creation from the 3D paint since the ultimate goal of the project was to be able to paint interactively while the texture is being generated on the fly in the background and updated live in the renderer.
+
+To achieve this the texture generation is performed on the GPU and the resulting pixels written to a TIF image using custom code specific to this project, rather than relying on a generic image library. The result is a 2048x2048 texture can be generated and written to disk as a TIF image in less than 100ms.
+
+The [code](https://github.com/tristan-north/looklab) is up on my github.
+
+<br>
+## // Additional Projects
  - Gleam Maya 8.5 (screenshot)
  - fmon
  - renderLog (screenshot from old reel)
  - rmanView, a framebuffer for renderman (code on github)
+ - VR cinema app
